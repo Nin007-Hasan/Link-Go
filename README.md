@@ -1,1 +1,1 @@
-Hello
+While Somebody/Someone share link in whatsapp and viber its quite a bit frustating sometimes. Cause something I need to open in Pc not in my smartphone. That is the Android client to share the link to my Pc. You can have that also. 
