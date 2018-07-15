@@ -8,6 +8,14 @@ import android.view.MenuItem
 import android.widget.Toast
 
 import kotlinx.android.synthetic.main.activity_main.*
+import android.R.string.cancel
+import android.app.AlertDialog
+import android.app.Dialog
+import android.app.PendingIntent.getActivity
+import android.content.DialogInterface
+import android.view.LayoutInflater
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +30,24 @@ class MainActivity : AppCompatActivity() {
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                    .setAction("Action", null).show()
             Toast.makeText(this,"This press will show Custom Box",Toast.LENGTH_SHORT).show()
+            //builder.create()
         }
+    }
+
+    fun onCreateDialog(savedInstanceState: Bundle): Dialog {
+        val builder = AlertDialog.Builder(this)
+        // Get the layout inflater
+        val inflater = this.getLayoutInflater()
+
+        // Inflate and set the layout for the dialog
+        // Pass null as the parent view because its going in the dialog layout
+        builder.setView(inflater.inflate(R.layout.acitivity_custom_link, null))
+//                // Add action buttons
+//                .setPositiveButton(R.string.signin, DialogInterface.OnClickListener { dialog, id ->
+//                    // sign in the user ...
+//                })
+//                .setNegativeButton(R.string.cancel, DialogInterface.OnClickListener { dialog, id -> this@LoginDialogFragment.getDialog().cancel() })
+        return builder.create()
     }
 
 //    override fun onCreateOptionsMenu(menu: Menu): Boolean {
