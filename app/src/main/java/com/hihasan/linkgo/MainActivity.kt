@@ -29,8 +29,9 @@ class MainActivity : AppCompatActivity() {
         val inflater: LayoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val dialogLayout: View = inflater.inflate(R.layout.acitivity_custom_link, dialog_sign_in)
         builder.setView(dialogLayout)
-        builder.setCancelable(false)
+        builder.setCancelable(true)
        // builder.setTitle("Sign In")
+
         val fabDialog: AlertDialog = builder.create()
 
         fab.setOnClickListener { view ->
@@ -39,10 +40,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        cancel.setOnClickListener({
-            v: View? ->
-            Toast.makeText(this,"Cancel",Toast.LENGTH_SHORT).show()
-        })
+//        cancel.setOnClickListener({
+//            v: View? ->
+//            Toast.makeText(this,"Cancel",Toast.LENGTH_SHORT).show()
+//        })
     }
 }
 
