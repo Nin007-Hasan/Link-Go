@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 /**
  * *Need TO Work on
- * 1. Custom Dialogbox using ALeartDialog
  * 2. Take input from 2 edittext
  * 3. Get Value & print it into Toast
  */
@@ -31,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         val dialogLayout: View = inflater.inflate(R.layout.acitivity_custom_link, dialog_sign_in)
         builder.setView(dialogLayout)
         builder.setCancelable(false)
-        builder.setTitle("Sign In")
+       // builder.setTitle("Sign In")
         val fabDialog: AlertDialog = builder.create()
 
         fab.setOnClickListener { view ->
@@ -45,8 +44,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"Cancel",Toast.LENGTH_SHORT).show()
         })
     }
-
-
 }
 
 
