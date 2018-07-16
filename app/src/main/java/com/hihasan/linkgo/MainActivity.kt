@@ -39,6 +39,11 @@ class MainActivity : AppCompatActivity() {
             fabDialog.show()
 
         }
+
+        cancel.setOnClickListener({
+            v: View? ->
+            Toast.makeText(this,"Cancel",Toast.LENGTH_SHORT).show()
+        })
     }
 
 
