@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+
         val builder: AlertDialog.Builder = AlertDialog.Builder(this)
         val inflater: LayoutInflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val dialogLayout: View = inflater.inflate(R.layout.acitivity_custom_link, dialog_sign_in)
